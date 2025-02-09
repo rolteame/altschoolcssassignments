@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-section {
+  padding: 20px;
+  width: 80%;
+}
+
+.header {
+  font-weight: 800;
+  font-size: 32px;
+}
+
+.highlight {
+ color: #009966;
+ font-weight: 800;
+}
+
+.content-section {
+  background-color: #666666;
+  border-top: #807f7f solid 10px;
+  padding: 30px 0;
+}
+
+.content {
+  background-color: #ffffff;
+  padding: 2px 0;
+}
+
+.content-section h2 {
+  background-color: #FFBF00;
+  border-bottom: #CC9900 solid 8px;
+  font-size: 24px;
+  font-weight: 800;
+  padding: 25px;
+  width: fit-content;
+}
+
+.content-section p {
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    width: 100%;
+    height: 100lvh;
+  }
+
+  .header-section {
+    height: 40vh;
+    width: 808px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .content-section {
+    height: 50vh;
+  }
+
+  .content {
+    width: 808px;
+    margin: 0 auto;
+  }
+
+  .content-section h2 {
+    padding: 25px;
+    position: relative;
+    left: -20px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px) {
+  .header-section {
+    width: 60%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
