@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap");
+
+body {
+	font-family: "Cabin", sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	background-color: #f7fdfc;
+}
+
+main {
+	padding: 20px;
+	margin: 30px 0;
+}
+
+.header h1 {
+	font-size: 30px;
+	font-weight: 700;
+	color: #000b0a;
+}
+
+.header p {
+	font-size: 16px;
+	color: #737373;
+}
+
+.desktop {
+	display: none;
+}
+
+form {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 6px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin-top: 50px;
+}
+
+.form-item {
+	font-family: "Sofia Sans", sans-serif;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	font-size: 14px;
+}
+
+.form-item label {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.form-item input,
+.form-item select {
+	outline: none;
+	padding: 20px;
+	border: 1px solid #f0f0f0;
+	margin-bottom: 10px;
+}
+
+.form-item input:active,
+.form-item select:active,
+.form-item input:focus,
+.form-item select:focus,
+.form-item input:hover,
+.form-item select:hover {
+	border: 3px solid #2ec4b6;
+}
+
+.btn {
+	background-color: #2ec4b6;
+	color: #fff;
+	width: 100%;
+	padding: 20px;
+	margin: 10px 0;
+	font-size: 16px;
+	font-weight: 700;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.terms {
+	font-size: 14px;
+	color: #737373;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.terms a {
+	color: #2ec4b6;
+	font-weight: 500;
+	width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+	main {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 100px;
+		height: 100lvh;
+	}
+
+	.header {
+		width: 50%;
+    display: flex;
+    flex-direction: column;
+		/* margin-right: 20px; */
+	}
+
+	.header h1 {
+		font-size: 40px;
+	}
+
+	.header p {
+		font-size: 16px;
+	}
+
+	.logo {
+		width: 100px;
+	}
+
+	.desktop {
+		display: block;
+		width: 50%;
+	}
+
+	.mobile {
+		display: none;
+	}
+
+	.form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 50vw;
+	}
+
+	.form-group {
+		display: flex;
+		gap: 20px;
+	}
+
+	.form-item {
+		width: 100%;
+	}
+
+	.btn-group {
+		width: 100%;
+	}
+
+	.desktop-terms {
+		font-size: 14px;
+		color: #737373;
+		margin-top: 10px;
+		text-align: center;
+	}
+
+	.desktop-terms a {
+		color: #2ec4b6;
+		font-weight: 500;
+		width: 100%;
+	}
+}
